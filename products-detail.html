@@ -58,72 +58,69 @@
 
     <div>
         <div class="grid-layout">
-                <label for="myCheckbox" class="sr-only">Name</label>
-                <input class="checkbox1" type="checkbox" id="myCheckbox" name="myCheckbox">
-                <p class="text-grid">Express Delivery (Package delivery in 1 day)</p>
+            <label for="expressDelivery" class="sr-only">Express Delivery (Package delivery in 1 day)</label>
+            <input class="checkbox1" type="checkbox" id="expressDelivery" name="deliveryOption">
+            <p class="text-grid">Express Delivery (Package delivery in 1 day)</p>
         </div>
-
+        
         <div class="grid-layout">
-            <label for="myCheckbox" class="sr-only">Name</label>
-            <input class="checkbox1" type="checkbox" id="myCheckbox" name="myCheckbox">
-            <p class="text-grid">Standard Delivery (Package delivery in 4-5 day)</p>
+            <input class="checkbox1" type="checkbox" id="standardDelivery" name="deliveryOption">
+            <p class="text-grid">Standard Delivery (Package delivery in 4-5 days)</p>
         </div>
-
+        
         <div class="grid-layout">
-            <label for="myCheckbox" class="sr-only">Name</label>
-            <input class="checkbox1" type="checkbox" id="myCheckbox" name="myCheckbox">
-            <p class="text-grid">Home delivery (Package delivery in 2-3 day)</p>
+            <input class="checkbox1" type="checkbox" id="homeDelivery" name="deliveryOption">
+            <p class="text-grid">Home delivery (Package delivery in 2-3 days)</p>
         </div>
-    </div>
-
-    <div class="h2-container">
-        <h2>Payment method</h2>
-    </div>
-
-    <div>
-        <div class="grid-layout">
-            <label for="myCheckbox" class="sr-only">Name</label>
-            <input class="checkbox1" type="checkbox" id="myCheckbox" name="myCheckbox">
-            <p class="text-grid">Visa (Credit/Debit)</p>
+        
         </div>
-    
-        <div class="grid-layout">
-            <label for="myCheckbox" class="sr-only">Name</label>
-            <input class="checkbox1" type="checkbox" id="myCheckbox" name="myCheckbox">
-            <p class="text-grid">Mastercard</p>
+        
+        <div class="h2-container">
+            <h2>Payment method</h2>
         </div>
-
-        <div class="grid-layout">
-            <label for="myCheckbox" class="sr-only">Name</label>
-            <input class="checkbox1" type="checkbox" id="myCheckbox" name="myCheckbox">
-            <p class="text-grid">Klarna</p>
-        </div>
-
+        
         <div>
-            <p>Name of Card Owner</p>
-                <label for="myCheckbox" class="sr-only">Name</label>
-                <input type="text" id="myCheckbox" name="myCheckbox">
-        </div>
-
-        <div>
-            <p>Card number</p>
-            <label for="myCheckbox" class="sr-only">Name</label>
-            <input type="text" id="myCheckbox" name="myCheckbox">
-        </div>
-
-        <div class="CVV-Exp-container">
-            <div>
-                <p>Expiry Date</p>
-                    <label for="myCheckbox" class="sr-only">Name</label>
-                    <input type="text" id="myCheckbox" name="myCheckbox">
+            <div class="grid-layout">
+                <input class="checkbox1" type="checkbox" id="visa" name="paymentMethod">
+                <label for="visa" class="sr-only">Visa (Credit/Debit)</label>
+                <p class="text-grid">Visa (Credit/Debit)</p>
             </div>
-
+        
+            <div class="grid-layout">
+                <input class="checkbox1" type="checkbox" id="mastercard" name="paymentMethod">
+                <label for="mastercard" class="sr-only">Mastercard</label>
+                <p class="text-grid">Mastercard</p>
+            </div>
+        
+            <div class="grid-layout">
+                <input class="checkbox1" type="checkbox" id="klarna" name="paymentMethod">
+                <label for="klarna" class="sr-only">Klarna</label>
+                <p class="text-grid">Klarna</p>
+            </div>
+        
             <div>
-                <p>CVV</p>
-                <label for="myCheckbox" class="sr-only">Name</label>
-                <input type="text" id="myCheckbox" name="myCheckbox">
+                <label for="cardOwner">Name of Card Owner</label>
+                <input type="text" id="cardOwner" name="cardOwner">
+            </div>
+        
+            <div>
+                <label for="cardNumber">Card number</label>
+                <input type="text" id="cardNumber" name="cardNumber">
+            </div>
+        
+            <div class="CVV-Exp-container">
+                <div>
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="text" id="expiryDate" name="expiryDate">
+                </div>
+        
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv">
+                </div>
             </div>
         </div>
+        
 
         <a href="checkout-success.html"><button>Purchase</button></a>
     </div>
